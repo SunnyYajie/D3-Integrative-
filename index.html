@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/544861947b.js" crossorigin="anonymous"></script>
+    <!-- ========================== CSS Link ========================== -->
+    <link rel="stylesheet" href="style.css">
+    <title>Day 1 Nav and Background</title>
+</head>
+<body>
+    <header>
+        <section id="header">
+            <div class="container" style="margin-top: 5rem;">
+                <div class="navbar">
+                    <nav>
+                        <!-- ========================== Logo in Nav Bar ========================== -->
+                        <img src="images/logo2.png" href="#header" class="logo">
+                        <!-- ========================== Nav Bar Items ========================== -->
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">Family Guy</a></li>
+                            <li><a href="#portfolio">The Simpsons</a></li>
+                            <li><a href="#contact">Footer</a></li>
+                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                </div>
+                <!-- ========================== Opening/Header Text ========================== -->
+                <div class="header-bg">
+                    <div class="header-text">
+                        <h1>Ad Astra! I am</h1>
+                        <h1 class="name">Eijay M. Gabrentina</h1>
+                        <h1>a <span class="profession"></span></h1>
+                        <h1>based in the Philippines</h1>
+                        <p>I'm currently taking Bachelor of Science in Information Technology in St. Dominic College of Asia.
+                            This is my first lab activity (nav and background) in the subject Integrative Programming and Technologies Welcome to my world!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <body>
+        <section id="about">
+            <div class="container" style="text-align: center;">
+                <!-- ========================== Opening/Header Text ========================== -->
+                <div class="header-bg">
+                    <div class="header-text">
+                        <h1 class="name" >Family Guy</h1>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <img src="images/Meg.png" style="height: 19rem; margin-bottom: 1rem;">
+                        <img src="images/PeterGriffin.png">
+                        <img src="images/Stewie.webp" style="width: 8rem; margin-bottom: 1rem;">
+                        <img src="images/Lois.png" style="width: 6.5rem; margin-left: 2rem; margin-right: 1rem;">
+                        <img src="images/Chris.png" style="width: 12rem; ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container" style="margin-bottom: 10rem; text-align: center;">
+                <!-- ========================== Opening/Header Text ========================== -->
+                <div class="header-bg">
+                    <div class="header-text">
+                        <h1 class="name" >The Simpsons</h1>
+                    </div>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <img src="images/Lisa.png" style="width: 9rem; margin-bottom: 1rem;">
+                        <img src="images/Homer.png" style="width: 13rem;">
+                        <img src="images/Maggie.png" style="width: 8rem; margin-bottom: 1rem;">
+                        <img src="images/Marge.png" style="width: 9rem; margin-left: 2rem; margin-right: 1rem;">
+                        <img src="images/Bart.png" style="width: 12rem; ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title hit-me-up" >Hit Me Up!</h1>
+                        <address>
+                        </address>
+                            <p><i class="fa-solid fa-envelope"></i> eijay.gabrentina@sdca.edu.ph</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 09384537329</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100013357454112"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/SunnyYajie"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://discord.com/users/742665344467861515"><i class="fa-brands fa-discord"></i></a>
+                                <a href="https://www.linkedin.com/in/eijay-gabrentina-917018225/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="email" required>
+                            <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © EMG || St. Dominic College of Asia || 2024</p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
