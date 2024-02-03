@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: #333356;
+    background: #91d2f0;
     color: white;
 }
 
@@ -18,7 +18,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/Spacebgorig.gif);
+    background-image: url(images/CNbg.gif);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -41,14 +41,14 @@ nav{
     position: fixed;
     top: 0;
     width: 80%;
-    background-color: #363656ce ;
+    background-color: #7a7aa15b ;
     border-radius: 15px;
     padding: .3rem 3rem;
     z-index: 2;
 }
 
 .logo{
-    width: 70px;
+    width: 120px;
 }
 
 nav ul li{
@@ -58,7 +58,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #D0E5E8;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     position: relative;
@@ -69,7 +69,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #42CFCA;
+    background: #D0E5E8;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -84,7 +84,7 @@ nav ul li a:hover::after{
 /* ========================== Contains All Of The Home/Header Text ========================== */
 .header-bg{
     margin-top: 10rem;
-    background-color: #363656ce ;
+    background-color: #4a4a68d0 ;
     padding: 5%;
     border-radius: 35px;
 }
@@ -358,76 +358,6 @@ nav ul li a:hover::after{
     background: #42cfca;
 }
 
-/* ========================== Project Tab In Portfolio ========================== */
-.portfolio-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 5rem;
-}
-
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 1s;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(43, 139, 145,.8) ,rgb(83,87,132));
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 1s;
-}
-
-.work:hover .layer{
-    height: 105%;
-}
-
-.layer h3{
-    font-weight: 900;
-    margin-bottom: 1rem;
-}
-
-.layer p{
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-.layer a{
-    margin-top: 1rem;
-    color: rgb(83,87,132);
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-
 /* ========================== Achievements Tab In Portfolio ========================== */
 .carousel-body{
     width: 105%;
@@ -456,14 +386,14 @@ nav ul li a:hover::after{
 }
 
 .slide > .photo{
-    width: 50rem;
-    height: 20rem;
+    width: fit-content;
+    height: fit-content ;
     transition: all 1s ease;
 }
 
 .slide > .photo > img{
     width: 50%;
-    height: 30rem;
+    height: 50%;
     object-fit: cover;
     transition: width 1s;
 }
@@ -499,16 +429,19 @@ nav ul li a:hover::after{
 }
 
 .slide:nth-child(1) .photo::before{
-    content: '01 _____ 04';
+    content: '01 _____ 05';
 }
 .slide:nth-child(2) .photo::before{
-    content: '02 _____ 04';
+    content: '02 _____ 05';
 }
 .slide:nth-child(3) .photo::before{
-    content: '03 _____ 04';
+    content: '03 _____ 05';
 }
 .slide:nth-child(4) .photo::before{
-    content: '04 _____ 04';
+    content: '04 _____ 05';
+}
+.slide:nth-child(5) .photo::before{
+    content: '05 _____ 05';
 }
 
 .slider:active{
